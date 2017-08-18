@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+
+  nginx:
+    networks:
+     - default
+     - gogs_default
+
+networks:
+  default: # this network (app2)
+    driver: bridge
+  gogs_default: # external network (app1)
+    external: true
+

@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  git:
+    networks:
+      - default
+      - proxy_default
+
+networks:
+  default:
+    driver: bridge
+  proxy_default: 
+    external: true
+
