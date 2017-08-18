@@ -5,10 +5,13 @@ services:
     networks:
      - default
      - gogs_default
+     - nextcloud_default
 
 networks:
   default: # this network (app2)
     driver: bridge
   gogs_default: # external network (app1)
+    external: true
+  nextcloud_default: # external network (app1)
     external: true
 
