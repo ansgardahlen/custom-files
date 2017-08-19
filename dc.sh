@@ -10,9 +10,16 @@ case "$1" in
         stop)
             OPTION="docker-compose down"
             ;;
+        restart)
+            OPTION="docker-compose restart"
+            ;;
          
+        status)
+            docker ps -a --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Ports}}"
+            exit 0
+            ;;
         *)
-            echo $"Usage: $0 {start|stop}"
+            echo $"Usage: $0 {start|stop|restart|status}"
             exit 1
  
 esac
