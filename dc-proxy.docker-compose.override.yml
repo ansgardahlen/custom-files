@@ -1,17 +1,20 @@
-version: '2.1'
-services:
+version: '2.2'
+#services:
 
-  nginx:
-    networks:
-     - default
-     - gogs_default
-     - nextcloud_default
+#  nginx:
+#    network_mode: bridge
+#    networks:
+#     - default
+#     - gogs_default
+#     - nextcloud_default
+#    external_links:
+#     - nextcloud_nextcloud_1
 
-networks:
-  default: # this network (app2)
-    driver: bridge
-  gogs_default: # external network (app1)
-    external: true
-  nextcloud_default: # external network (app1)
-    external: true
+#networks:
+#  default: # this network (app2)
+#    driver: bridge
+#  gogs_default: # external network (app1)
+#    external: true
+#  nextcloud_default: # external network (app1)
+#    external: true
 
