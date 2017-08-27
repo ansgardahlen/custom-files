@@ -1,0 +1,45 @@
+version: '2.1'
+services:
+
+    unbound-mailcow:
+      container_name: dc_mc_unbound
+
+    mysql-mailcow:
+      container_name: dc_mc_mysql
+
+    redis-mailcow:
+      container_name: dc_mc_redis
+
+    clamd-mailcow:
+      container_name: dc_mc_clamd
+
+    rspamd-mailcow:
+      container_name: dc_mc_rspamd
+
+    php-fpm-mailcow:
+      container_name: dc_mc_php-fpm
+
+    sogo-mailcow:
+      container_name: dc_mc_sogo
+
+    dovecot-mailcow:
+      container_name: dc_mc_dovecot
+
+    postfix-mailcow:
+      container_name: dc_mc_postfix
+
+    memcached-mailcow:
+      container_name: dc_mc_memcached
+
+    nginx-mailcow:
+      container_name: dc_mc_nginx
+
+    acme-mailcow:
+      container_name: dc_mc_acme
+
+    fail2ban-mailcow:
+      container_name: dc_mc_fail2ban
+
+    ipv6nat:
+      container_name: dc_mc_ipv6nat
+
