@@ -1,13 +1,14 @@
 version: '2.1'
 services:
-  gogs:
+
+  openvpn:
     networks:
       - default
-      - proxy_default
+      - checkmk_default
 
 networks:
   default:
     driver: bridge
-  proxy_default: 
+  checkmk_default: 
     external: true
 
