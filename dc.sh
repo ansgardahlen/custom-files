@@ -15,7 +15,7 @@ case "$1" in
             ;;
          
         status)
-            docker ps -a --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Ports}}"
+            docker ps --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Ports}}"
             exit 0
             ;;
         *)
