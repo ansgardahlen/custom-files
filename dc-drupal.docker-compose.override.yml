@@ -1,6 +1,6 @@
 version: '2.2'
 services:
-  nextcloud:
+  nginx:
     networks:
       - default
       - proxy_default

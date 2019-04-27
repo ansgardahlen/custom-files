@@ -11,8 +11,8 @@ services:
   nextcloud-db:
     restart: always
 
-  solr:
-    restart: always
+  #solr:
+  #  restart: always
 
   redis:
     restart: always
