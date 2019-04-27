@@ -1,6 +1,7 @@
 #!/bin/sh
 
 SEARCHFILE="docker-compose.yml"
+HOMEDIR=`pwd`
 
 case "$1" in
         start)
@@ -24,11 +25,11 @@ case "$1" in
  
 esac
 
-for i in $(find . -maxdepth 2 -name $SEARCHFILE | sed -e "s/$SEARCHFILE//g");
+for i in $(find . -maxdepth 3 -name $SEARCHFILE | sed -e "s/$SEARCHFILE//g");
 do
  cd $i
  $OPTION
- cd ..
+ cd $HOMEDIR
 done
 
 
