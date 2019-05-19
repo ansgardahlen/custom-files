@@ -1,6 +1,7 @@
 version: '2.1'
 services:
   gogs:
+    image: gogs/gogs
     networks:
       - default
       - proxy_default
