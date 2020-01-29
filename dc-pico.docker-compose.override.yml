@@ -1,11 +1,6 @@
 version: '2.1'
 services:
-  gogs:
-<<<<<<< HEAD
-    image: gogs/gogs:0.11.43
-=======
-    image: gogs/gogs
->>>>>>> e55d92e6006a39f1f6f59238e60f589d89eb5659
+  picocms:
     networks:
       - default
       - proxy_default
