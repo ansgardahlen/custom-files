@@ -1,6 +1,7 @@
 version: '2.1'
 services:
   rancher:
+    image: rancher/server
     networks:
       - default
       - proxy_default
