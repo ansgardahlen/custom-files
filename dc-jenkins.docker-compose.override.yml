@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+  jenkins:
+    image: jenkins
+    networks:
+      - default
+      - proxy_default
+
+networks:
+  default:
+    driver: bridge
+  proxy_default: 
+    external: true
+
